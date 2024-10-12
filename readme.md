@@ -1,7 +1,7 @@
 
 # 📂 Scripts para Desenvolvedores
 
-Bem-vindo ao repositório **Scripts para Desenvolvedores**! 🎉
+Bem-vindo ao repositório que fiz para facilitar minha vida e de outros desenvolvedores. 🎉
 
 Este repositório foi criado para facilitar a vida dos desenvolvedores, fornecendo scripts úteis para diversas tarefas diárias de desenvolvimento. Os scripts aqui presentes são feitos em **Shell Script** para sistemas baseados em Linux/macOS e **PowerShell** para usuários de Windows.
 
@@ -9,7 +9,7 @@ Este repositório foi criado para facilitar a vida dos desenvolvedores, fornecen
 
 Clique no nome do script para acessar a documentação e exemplos de uso:
 
-1. [🔄 Atualizador de IP no Security Group da AWS](./atualiza_ip/README.md)
+1. [🔄 Atualizador de IP no Security Group da AWS](./Change_IP_Security_Group/readme.md)
 2. [🚀 Script de Deploy Automático - em andamento] 
 
 
@@ -19,11 +19,8 @@ Aqui está como o projeto está organizado:
 
 ```plaintext
 /
-├── atualiza_ip/               # Scripts para atualização de IP no AWS Security Group
-├── deploy_automatico/         # Scripts de deploy automático
-├── gerenciador_pacotes/       # Scripts para gerenciar pacotes de maneira personalizada
-├── ferramentas_manutencao/    # Scripts de manutenção para desenvolvedores
-└── configurador_ambiente/     # Scripts para configuração de ambientes de desenvolvimento
+├── Change_IP_Security_Group/               # Scripts para atualização de IP no AWS Security Group
+
 ```
 
 Cada pasta contém um arquivo **README.md** com uma explicação detalhada sobre o script, seu funcionamento e exemplos práticos de uso.
