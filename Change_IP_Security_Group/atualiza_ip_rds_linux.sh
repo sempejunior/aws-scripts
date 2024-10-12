@@ -1,12 +1,15 @@
 #!/bin/bash
 
+# Obtenha o diretório onde o script está localizado
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+
 # Função para carregar o arquivo .env
 function load_env {
-    if [ -f .env ]; then
-        echo "Carregando o arquivo .env..."
-        export $(grep -v '^#' .env | xargs)
+    if [ -f "$SCRIPT_DIR/.env" ]; then
+        echo "Carregando o arquivo .env do diretório $SCRIPT_DIR..."
+        export $(grep -v '^#' "$SCRIPT_DIR/.env" | xargs)
     else
-        echo "Arquivo .env não encontrado! Certifique-se de que está na mesma pasta que o script."
+        echo "Arquivo .env não encontrado no diretório $SCRIPT_DIR! Certifique-se de que está na mesma pasta que o script."
         exit 1
     fi
 }
