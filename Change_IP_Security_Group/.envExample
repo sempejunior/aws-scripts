@@ -1,6 +1,21 @@
-AWS_ACCESS_KEY_ID=133213
-AWS_SECRET_ACCESS_KEY=3213/0uiwJ
-AWS_REGION=us-east-32
-SECURITY_GROUP_ID=sg-32131
+# Copie este arquivo para .env, na mesma pasta do script, e preencha.
+# Nunca faça commit do .env: ele tem chaves de acesso.
+
+# Sua chave de acesso da AWS (IAM -> Users -> seu usuário -> Security credentials -> Create access key)
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=us-east-1
+
+# Security Group do banco de produção e a porta do PostgreSQL (peça para quem administra a AWS)
+SECURITY_GROUP_ID=
 PORT=5432
-name=Eu
+
+# Nome único POR MÁQUINA: letras, números, ponto, hífen ou sublinhado. Ex.: Maria-Notebook, Maria-Mac
+# O script apaga os IPs antigos com este nome; duas máquinas com o mesmo nome tiram o acesso uma da outra.
+name=
+
+# Acesso às docs da API (Swagger). Os três valores são iguais para todo o time; peça para quem administra o Cloudflare.
+# Sem eles o script ainda libera o banco, mas não atualiza o Swagger.
+CLOUDFLARE_API_TOKEN=
+CLOUDFLARE_ACCOUNT_ID=
+CLOUDFLARE_LIST_ID=
